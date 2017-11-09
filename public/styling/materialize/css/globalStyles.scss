@@ -56,6 +56,10 @@ h5 {
  font-size: 2em !important;
 }
 
+a {
+  // text-decoration: none;
+}
+
 article {
   background-color: $almost-white;
   padding: 5rem;
@@ -116,10 +120,10 @@ nav {
 
     .car-item-one.carousel-item {
       background-image: url('../../../pics/pregnant-one.jpg');
-      position: relative;
+      position: static;
       overflow: hidden;
       background-color: grey;
-      opacity: 50%;
+      // opacity: 50%;
       background-size: cover;
 
       @media (min-width: $med-large-breakpoint) {
@@ -144,7 +148,7 @@ nav {
   }
 
 .btn-large {
-  border-radius: 30px;
+  border-radius: 20px;
   margin-top: 10px;
 }
 
@@ -157,36 +161,45 @@ nav {
     width: 25vw;
     height: 25vh;
     border: 0;
+    text-align: center;
+    color: white;
+
+    h2 {
+      position: absolute;
+      width: auto;
+      padding-left: 2%;
+    }
 
     .imgDiv {
       height: 100%;
       width: 100%;
 
-        .optImg {
-        /*width: 100%;*/
-        height: 100%;
-        opacity: 0.2;
-        overflow: hidden;
+
+      .optImg {
+      width: 100%;
+      height: 100%;
+      opacity: 0.2;
+      overflow: hidden;
       }
     }
   }
 }
 
 
-.offeringOne {
+.massage {
   box-sizing: border-box;
   background-color: $pink;
 }
 
-.offeringTwo {
+.childbirthED {
   background-color: $orange;
 }
 
-.offeringThree {
+.schedule {
   background-color: $teal;
 }
 
-.offeringFour {
+.doula {
   background-color: $lt-grey;
 }
 
@@ -221,7 +234,7 @@ nav {
 
 .bbSection {
   height: 400px;
-  background-color: $almost-white;
+  background-color: $teal;
   z-index: 1;
   padding: 5rem;
   // box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
@@ -248,16 +261,22 @@ nav {
   text-align: center;
   border-top: 10px solid $teal;
   border-bottom: 10px solid $teal;
-  color: $teal;
+  color: $almost-white;
 
   h2 {
-    color: $key-color;
+    color: $lt-grey;
   }
 
 
   a {
     font-size: 1.4em;
-    background-color: $pink;
+    background-color: $almost-white;
+    border: 1px solid $teal;
+    color: $teal;
+
+    :hover {
+      background-color: $almost-white;
+    }
   }
 }
 
@@ -265,15 +284,15 @@ nav {
   text-align: center;
   border-top: 10px solid $teal;
   border-bottom: 10px solid $teal;
-  color: $teal;
+  color: $almost-white;
 
   h2 {
-    color: $key-color;
+    color: $lt-grey;
   }
 
   i {
-    font-size: 10px;
-    color: $teal;
+    font-size: 14px;
+    color: $pink;
     padding: 10px;
   }
 
@@ -287,21 +306,32 @@ nav {
   text-align: center;
   border-top: 10px solid $teal;
   border-bottom: 10px solid $teal;
-  color: $teal;
+  color: $almost-white;
 
   h2 {
-    color: $key-color;
+    color: $lt-grey;
   }
 
   i {
     font-size: 10px;
-    color: $teal;
+    color: $pink;
     padding: 10px;
   }
 
   a {
     font-size: 1.4em;
     background-color: $orange;
+  }
+}
+
+.secondaryPg {
+
+  h1 {
+    padding: 0 40px;
+  }
+  h2 {
+    padding: 0 40px;
+
   }
 }
 

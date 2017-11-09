@@ -8,6 +8,13 @@ $( document ).ready(function() {
 
     $('.carousel.carousel-slider').carousel({fullWidth: true});
 
+//figure out how to stop after going through once
+    // $('.carousel').carousel(setTimeout(autoplay, 4500));
+    //   function autoplay() {
+    //     $('.carousel').carousel('next');
+    //     setTimeout(autoplay, 4500);
+    //   }
+
     // $(window).scroll(function() {
     //         var scroll = $(window).scrollTop(); // how many pixels you've scrolled
     //         var osWork = $('#workshopsID').offset().top; // pixels to the top of div1

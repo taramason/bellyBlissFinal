@@ -69,10 +69,9 @@ nav {
 
 .carousel.carousel-slider .car-item-one.carousel-item {
   background-image: url("../../../pics/pregnant-one.jpg");
-  position: relative;
+  position: static;
   overflow: hidden;
   background-color: grey;
-  opacity: 50%;
   background-size: cover; }
   @media (min-width: 1200px) {
     .carousel.carousel-slider .car-item-one.carousel-item {
@@ -90,7 +89,7 @@ nav {
   top: 100px; }
 
 .btn-large {
-  border-radius: 30px;
+  border-radius: 20px;
   margin-top: 10px; }
 
 .offeringCont {
@@ -100,27 +99,33 @@ nav {
   .offeringCont .offering {
     width: 25vw;
     height: 25vh;
-    border: 0; }
+    border: 0;
+    text-align: center;
+    color: white; }
+    .offeringCont .offering h2 {
+      position: absolute;
+      width: auto;
+      padding-left: 2%; }
     .offeringCont .offering .imgDiv {
       height: 100%;
       width: 100%; }
       .offeringCont .offering .imgDiv .optImg {
-        /*width: 100%;*/
+        width: 100%;
         height: 100%;
         opacity: 0.2;
         overflow: hidden; }
 
-.offeringOne {
+.massage {
   box-sizing: border-box;
   background-color: #E20073; }
 
-.offeringTwo {
+.childbirthED {
   background-color: #F76306; }
 
-.offeringThree {
+.schedule {
   background-color: #377E81; }
 
-.offeringFour {
+.doula {
   background-color: #A89B9B; }
 
 .spacer {
@@ -147,7 +152,7 @@ nav {
 
 .bbSection {
   height: 400px;
-  background-color: #F0F0F0;
+  background-color: #377E81;
   z-index: 1;
   padding: 5rem; }
   .bbSection h1 {
@@ -164,23 +169,27 @@ nav {
   text-align: center;
   border-top: 10px solid #377E81;
   border-bottom: 10px solid #377E81;
-  color: #377E81; }
+  color: #F0F0F0; }
   .bbSpecials h2 {
-    color: #696969; }
+    color: #A89B9B; }
   .bbSpecials a {
     font-size: 1.4em;
-    background-color: #E20073; }
+    background-color: #F0F0F0;
+    border: 1px solid #377E81;
+    color: #377E81; }
+    .bbSpecials a :hover {
+      background-color: #F0F0F0; }
 
 .bbWorkshops {
   text-align: center;
   border-top: 10px solid #377E81;
   border-bottom: 10px solid #377E81;
-  color: #377E81; }
+  color: #F0F0F0; }
   .bbWorkshops h2 {
-    color: #696969; }
+    color: #A89B9B; }
   .bbWorkshops i {
-    font-size: 10px;
-    color: #377E81;
+    font-size: 14px;
+    color: #E20073;
     padding: 10px; }
   .bbWorkshops a {
     font-size: 1.4em;
@@ -190,16 +199,21 @@ nav {
   text-align: center;
   border-top: 10px solid #377E81;
   border-bottom: 10px solid #377E81;
-  color: #377E81; }
+  color: #F0F0F0; }
   .bbBlissKids h2 {
-    color: #696969; }
+    color: #A89B9B; }
   .bbBlissKids i {
     font-size: 10px;
-    color: #377E81;
+    color: #E20073;
     padding: 10px; }
   .bbBlissKids a {
     font-size: 1.4em;
     background-color: #F76306; }
+
+.secondaryPg h1 {
+  padding: 0 40px; }
+.secondaryPg h2 {
+  padding: 0 40px; }
 
 .bottomBorder {
   width: 100%;
