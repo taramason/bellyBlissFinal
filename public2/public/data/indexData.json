@@ -1,0 +1,23 @@
+{
+	"sections": [{
+			"heading": "Specials!",
+			"subHeading": "Christmas Special",
+			"message": "Get a 90-minute massage and three classes for $140, a savings of $45!",
+			"picture": ""
+		},
+
+		{
+			"heading": "Workshops",
+			"subHeading": "",
+			"message": "In addition to Childbirth Education, Belly Bliss offers a variety of workshops.",
+			"picture": ""
+		},
+
+		{
+			"heading": "",
+			"subHeading": "",
+			"message": "",
+			"picture": " "
+		}
+	]
+}
