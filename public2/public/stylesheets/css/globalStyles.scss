@@ -360,33 +360,58 @@ nav {
 //     background-color: $orange;
 //   }
 // }
+.card .card-content {
+
+}
+.cherryCreekBorder {
+  border-bottom: 5px solid $pink;
+}
+
+.stapletonBorder {
+  border-bottom: 5px solid $teal;
+}
+
+.otherBorder {
+  border-bottom: 5px solid $orange;
+}
 
 .bbclasses {
-
   // height: 700px;
   padding: 5rem;
 
-  .card {
-    width:300px;
+  .modalDiv {
+    display: inline-block;
+    width: 100%;
   }
 
-  // i {
-  //   font-size: 42px;
-  // }
+  .classesRow {
+    display: flex;
+  }
+
+  .card {
+    width:300px;
+    margin: 40px 20px;
+  }
 
   h1 {
-    margin: 0 0 30px;
+    margin: 0 0 30px 20px;
+  }
+
+  a.modal-trigger {
+    margin: 0 0 0 20px;
   }
   .schedHighlight {
     background-color: $lt-grey;
     padding: 10px;
     margin-left: 6px;
+    color: white;
+    border-radius: 3px;
     &:hover {
       background-color: $almost-white;
+      color: $key-color;
     }
   }
   .classSchedP {
-    display: inline-block;
   }
   .schedButton {
     float:right;

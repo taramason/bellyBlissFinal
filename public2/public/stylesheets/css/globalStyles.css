@@ -168,20 +168,38 @@ nav {
   background-color: blue;
   height: 100%; }
 
+.cherryCreekBorder {
+  border-bottom: 5px solid #E20073; }
+
+.stapletonBorder {
+  border-bottom: 5px solid #377E81; }
+
+.otherBorder {
+  border-bottom: 5px solid #F76306; }
+
 .bbclasses {
   padding: 5rem; }
+  .bbclasses .modalDiv {
+    display: inline-block;
+    width: 100%; }
+  .bbclasses .classesRow {
+    display: flex; }
   .bbclasses .card {
-    width: 300px; }
+    width: 300px;
+    margin: 40px 20px; }
   .bbclasses h1 {
-    margin: 0 0 30px; }
+    margin: 0 0 30px 20px; }
+  .bbclasses a.modal-trigger {
+    margin: 0 0 0 20px; }
   .bbclasses .schedHighlight {
     background-color: #A89B9B;
     padding: 10px;
-    margin-left: 6px; }
+    margin-left: 6px;
+    color: white;
+    border-radius: 3px; }
     .bbclasses .schedHighlight:hover {
-      background-color: #F0F0F0; }
-  .bbclasses .classSchedP {
-    display: inline-block; }
+      background-color: #F0F0F0;
+      color: #696969; }
   .bbclasses .schedButton {
     float: right; }
 

@@ -10,6 +10,15 @@ $( document ).ready(function() {
 
     $('.carousel').carousel({ noWrap: true });
 
+      $(document).ready(function(){
+        $('.modal').modal();
+      });
+
+// make statement to add border to bottom of classes diff color based on location
+//     if ($('.card .card-content').hasClass('cherryCreek')) {
+//       $(this).addClass('cherryCreekBorder');
+//     };
+
 //figure out how to stop after going through once
     // $('.carousel').carousel(setTimeout(autoplay, 4500));
     //   function autoplay() {
@@ -17,6 +26,7 @@ $( document ).ready(function() {
     //     setTimeout(autoplay, 4500);
     //   }
 
+//change colors based on where scrolled to.  Need to make slower transition.
     // $(window).scroll(function() {
     //         var scroll = $(window).scrollTop(); // how many pixels you've scrolled
     //         var osWork = $('#workshopsID').offset().top; // pixels to the top of div1

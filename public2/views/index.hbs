@@ -95,15 +95,68 @@
 
 <div class="bbclasses">
   {{#kidsClassesTitle}}
-    <h1>{{this.heading}}</h1>
-    <p class="classSchedP">{{this.message}}<span class="schedHighlight">{{this.highlight}}</span></p>
+    <div class="modalDiv">
+      <h1>{{this.heading}}</h1>
+      <!-- Modal Trigger -->
+      <a class="waves-effect waves-light btn modal-trigger" href="#scheduleModal">Book A Class</a>
+      <!-- Modal Structure -->
+      <div id="scheduleModal" class="modal bottom-sheet">
+        <div class="modal-content">
+          <h4>Schedule a Class</h4>
+          <p>To schedule a class, please call Belly Bliss at 303-399-1191</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+      </div>
+      <a class="waves-effect waves-light btn modal-trigger" href="https://clients.mindbodyonline.com/classic/mainclass?studioid=4440&tg=&vt=&lvl=&stype=-7&view=week&trn=0&page=&catid=&prodid=&date=11%2f18%2f2017&classid=0&prodGroupId=&sSU=&optForwardingLink=&qParam=&justloggedin=&nLgIn=&pMode=0" target="_blank">View Schedule</a>
+    </div>
   {{/kidsClassesTitle}}
-  {{# each kidsClasses }}
-    <div class="card ">
+  <div class="classesRow">
+    {{# each kidsClasses }}
+    <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src={{this.picture}}>
+        </div>
+        <div class="card-content {{this.location-border}}">
+          <span class="card-title activator grey-text text-darken-4"><i class="material-icons right arrow">arrow_drop_down</i>{{this.title}}</span>
+          <p><a href="#">Schedule</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>{{ this.title }}</span>
+          <p>{{this.description}}</p>
+        </div>
+      </div>
+    {{/ each }}
+  </div>
+</div>
+
+<div class="bbclasses">
+  {{#fitnessClassesTitle}}
+    <div class="modalDiv">
+      <h1>{{this.heading}}</h1>
+      <!-- Modal Trigger -->
+      <a class="waves-effect waves-light btn modal-trigger" href="#scheduleModal">Book A Class</a>
+      <!-- Modal Structure -->
+      <div id="scheduleModal" class="modal bottom-sheet">
+        <div class="modal-content">
+          <h4>Schedule a Class</h4>
+          <p>To schedule a class, please call Belly Bliss at 303-399-1191</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+      </div>
+      <a class="waves-effect waves-light btn modal-trigger" href="https://clients.mindbodyonline.com/classic/mainclass?studioid=4440&tg=&vt=&lvl=&stype=-7&view=week&trn=0&page=&catid=&prodid=&date=11%2f18%2f2017&classid=0&prodGroupId=&sSU=&optForwardingLink=&qParam=&justloggedin=&nLgIn=&pMode=0" target="_blank">View Schedule</a>
+    </div>
+  {{/fitnessClassesTitle}}
+  <div class="classesRow">
+  {{# each fitnessClasses }}
+  <div class="card">
     <div class="card-image waves-effect waves-block waves-light">
       <img class="activator" src={{this.picture}}>
     </div>
-    <div class="card-content">
+    <div class="card-content  {{this.location-border}}">
       <span class="card-title activator grey-text text-darken-4"><i class="material-icons right arrow">arrow_drop_down</i>{{this.title}}</span>
       <p><a href="#">Schedule</a></p>
     </div>
@@ -114,27 +167,6 @@
   </div>
   {{/ each }}
 </div>
-
-<div class="bbclasses">
-  {{#mammaClassesTitle}}
-    <h1>{{this.heading}}</h1>
-    <p>{{this.message}}</p>
-  {{/mammaClassesTitle}}
-  {{# each mammaClasses }}
-    <div class="card">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src={{this.picture}}>
-    </div>
-    <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4"><i class="material-icons right arrow">arrow_drop_down</i>{{this.title}}</span>
-      <p><a href="#">Schedule</a></p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>{{ this.title }}</span>
-      <p>{{this.description}}</p>
-    </div>
-  </div>
-  {{/ each }}
 </div>
       <!-- <div class="bbSection bbWorkshops" id="workshopsID">
         <h1>Workshops</h1>
