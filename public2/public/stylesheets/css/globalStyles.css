@@ -1,4 +1,18 @@
 @charset "UTF-8";
+.background-image-overlay {
+  background: -moz-linear-gradient(top, rgba(240, 240, 240, 0.8) 0%, rgba(226, 0, 115, 0.8) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(240, 240, 240, 0.8) 0%, rgba(226, 0, 115, 0.8) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(240, 240, 240, 0.8) 0%, rgba(226, 0, 115, 0.8) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#CCF0F0F0', endColorstr='#CCE20073',GradientType=0 );
+  /* IE6-9 */
+  z-index: 1; }
+
+.backgroundTealTest {
+  background-color: #377E81; }
+
 * {
   box-sizing: border-box; }
 
@@ -123,15 +137,23 @@ nav {
 .massage {
   box-sizing: border-box;
   background-color: #E20073; }
+  .massage:hover {
+    background-color: #ff49a6; }
 
 .childbirthED {
   background-color: #F76306; }
+  .childbirthED:hover {
+    background-color: #fa8236; }
 
 .schedule {
   background-color: #377E81; }
+  .schedule:hover {
+    background-color: #46a1a5; }
 
 .doula {
   background-color: #A89B9B; }
+  .doula:hover {
+    background-color: #c0b6b6; }
 
 .bbSection {
   display: flex;
@@ -168,10 +190,10 @@ nav {
   background-color: blue;
   height: 100%; }
 
-.cherryCreekBorder {
+.Cherry {
   border-bottom: 5px solid #E20073; }
 
-.stapletonBorder {
+.stapleton {
   border-bottom: 5px solid #377E81; }
 
 .otherBorder {
@@ -205,9 +227,9 @@ nav {
     background-color: transparent;
     color: #377E81;
     font-size: 1.4em;
-    height: auto; }
-  .bbclasses .modalText {
-    padding: 20px; }
+    height: 50px;
+    line-height: 52px;
+    text-transform: none; }
   .bbclasses .schedHighlight {
     background-color: #A89B9B;
     padding: 10px;

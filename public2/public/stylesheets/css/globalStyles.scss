@@ -15,6 +15,22 @@ $med-large-breakpoint: 1200px;
 
 $normal-font: 1rem;
 
+@mixin linear-gradient($top-color, $bottom-color, $opacity) {
+    background: -moz-linear-gradient(top, rgba($top-color, $opacity) 0%, rgba($bottom-color, $opacity) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba($top-color, $opacity) 0%, rgba($bottom-color, $opacity) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba($top-color, $opacity) 0%, rgba($bottom-color, $opacity) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{ie-hex-str(rgba($top-color, $opacity))}', endColorstr='#{ie-hex-str(rgba($bottom-color, $opacity))}',GradientType=0 ); /* IE6-9 */
+}
+
+//use example:
+.background-image-overlay {
+    @include linear-gradient($almost-white, $pink, .8);
+    z-index: 1;
+}
+
+.backgroundTealTest {
+  background-color: $teal;
+}
 
 * {
   box-sizing: border-box;
@@ -190,9 +206,6 @@ nav {
       height: 100%;
       opacity: 0.2;
       overflow: hidden;
-      &:hover {
-        // transparentize($color, $amount) / fade-out($color, $amount)
-      }
       }
     }
   }
@@ -201,18 +214,34 @@ nav {
 .massage {
   box-sizing: border-box;
   background-color: $pink;
+
+  &:hover {
+    background-color: lighten( $pink, 20% );
+  }
 }
 
 .childbirthED {
   background-color: $orange;
+
+  &:hover {
+    background-color: lighten( $orange, 10% );
+  }
 }
 
 .schedule {
   background-color: $teal;
+
+  &:hover {
+    background-color: lighten( $teal, 10% );
+  }
 }
 
 .doula {
   background-color: $lt-grey;
+
+  &:hover {
+    background-color: lighten( $lt-grey, 10% );
+  }
 }
 
 // .spacer {
@@ -366,11 +395,11 @@ nav {
 .card .card-content {
 
 }
-.cherryCreekBorder {
+.Cherry {
   border-bottom: 5px solid $pink;
 }
 
-.stapletonBorder {
+.stapleton {
   border-bottom: 5px solid $teal;
 }
 
@@ -420,10 +449,13 @@ nav {
     background-color: transparent;
     color: $teal;
     font-size: 1.4em;
-    height: auto;
-  }
-  .modalText {
-    padding: 20px;
+    height: 50px;
+    line-height: 52px;
+    text-transform: none;
+
+    span {
+      // padding:
+    }
   }
 
   .schedHighlight {

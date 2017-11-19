@@ -1,27 +1,6 @@
+<!-- Specials Pop-down -->
+
 <!-- Carousel -->
-
-  <!-- <div class="carousel carousel-slider center" data-indicators="true">
-    <div class="carousel-fixed-item center">
-      <a class="btn waves-effect white grey-text darken-text-2">button</a>
-    </div>
-    <div class="carousel-item red white-text" href="#one!">
-      <h2>First Panel</h2>
-      <p class="white-text">This is your first panel</p>
-    </div>
-    <div class="carousel-item amber white-text" href="#two!">
-      <h2>Second Panel</h2>
-      <p class="white-text">This is your second panel</p>
-    </div>
-    <div class="carousel-item green white-text" href="#three!">
-      <h2>Third Panel</h2>
-      <p class="white-text">This is your third panel</p>
-    </div>
-    <div class="carousel-item blue white-text" href="#four!">
-      <h2>Fourth Panel</h2>
-      <p class="white-text">This is your fourth panel</p>
-    </div>
-  </div> -->
-
 
       <div class="carousel carousel-slider center" data-indicators="true">
         <div class="carousel-fixed-item center">
@@ -115,18 +94,18 @@
   <div class="classesRow">
     {{# each kidsClasses }}
     <div class="card">
-        <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src={{this.picture}}>
-        </div>
-        <div class="card-content {{this.location-border}}">
-          <span class="card-title activator grey-text text-darken-4"><i class="material-icons right arrow">arrow_drop_down</i>{{this.title}}</span>
-          <p><a href="#">Schedule</a></p>
-        </div>
-        <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>{{ this.title }}</span>
-          <p>{{this.description}}</p>
-        </div>
+      <div class="card-image waves-block waves-light">
+        <img class="activator" src={{this.picture}}>
       </div>
+      <div class="card-content {{this.location-border}}">
+        <span class="card-title activator grey-text text-darken-4"><i class="material-icons right arrow">arrow_drop_down</i>{{this.title}}</span>
+        <p><a href="#">Schedule</a></p>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>{{ this.title }}</span>
+        <p>{{this.description}}</p>
+      </div>
+    </div>
     {{/ each }}
   </div>
 </div>
@@ -151,22 +130,60 @@
     </div>
   {{/fitnessClassesTitle}}
   <div class="classesRow">
-  {{# each fitnessClasses }}
-  <div class="card">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src={{this.picture}}>
-    </div>
-    <div class="card-content  {{this.location-border}}">
-      <span class="card-title activator grey-text text-darken-4"><i class="material-icons right arrow">arrow_drop_down</i>{{this.title}}</span>
-      <p><a href="#">Schedule</a></p>
-    </div>
-    <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>{{ this.title }}</span>
-      <p>{{this.description}}</p>
-    </div>
+    {{# each fitnessClasses }}
+      <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src={{this.picture}}>
+        </div>
+        <div class="card-content  {{this.location-border}}">
+          <span class="card-title activator grey-text text-darken-4"><i class="material-icons right arrow">arrow_drop_down</i>{{this.title}}</span>
+          <p><a href="#">Schedule</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>{{ this.title }}</span>
+          <p>{{this.description}}</p>
+        </div>
+      </div>
+    {{/ each }}
   </div>
-  {{/ each }}
 </div>
+
+<div class="bbclasses">
+  {{#workshopsSupportTitle}}
+    <div class="modalDiv">
+      <h1>{{this.heading}}</h1>
+      <!-- Modal Trigger -->
+      <a class="waves-effect waves-light btn modal-trigger" href="#scheduleModal">Book A Class</a>
+      <!-- Modal Structure -->
+      <div id="scheduleModal" class="modal bottom-sheet">
+        <div class="modal-content">
+          <h4>Schedule a Class</h4>
+          <p>To schedule a class, please call Belly Bliss at 303-399-1191</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+      </div>
+      <a class="waves-effect waves-light btn modal-trigger" href="https://clients.mindbodyonline.com/classic/mainclass?studioid=4440&tg=&vt=&lvl=&stype=-7&view=week&trn=0&page=&catid=&prodid=&date=11%2f18%2f2017&classid=0&prodGroupId=&sSU=&optForwardingLink=&qParam=&justloggedin=&nLgIn=&pMode=0" target="_blank"><span class="modalText">View Schedule</span></a>
+    </div>
+  {{/workshopsSupportTitle}}
+  <div class="classesRow">
+    {{# each workshopsSupport }}
+      <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src={{this.picture}}>
+        </div>
+        <div class="card-content  {{this.location-border}}">
+          <span class="card-title activator grey-text text-darken-4"><i class="material-icons right arrow">arrow_drop_down</i>{{this.title}}</span>
+          <p><a href="#">Schedule</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>{{ this.title }}</span>
+          <p>{{this.description}}</p>
+        </div>
+      </div>
+    {{/ each }}
+  </div>
 </div>
       <!-- <div class="bbSection bbWorkshops" id="workshopsID">
         <h1>Workshops</h1>
