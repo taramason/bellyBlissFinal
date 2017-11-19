@@ -7,7 +7,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: "Questrial", sans-serif !important;
-  color: #696969;
+  color: #696969 !important;
   position: relative; }
 
 p {
@@ -187,11 +187,27 @@ nav {
     flex-wrap: wrap; }
   .bbclasses .card {
     width: 300px;
-    margin: 40px 20px; }
+    margin: 40px 20px;
+    display: flex;
+    flex-direction: column; }
+  .bbclasses .card-content {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .bbclasses .card-content span {
+      color: #696969 !important; }
   .bbclasses h1 {
-    margin: 0 0 30px 20px; }
+    margin: 0 0 30px 20px;
+    color: #377E81; }
   .bbclasses a.modal-trigger {
-    margin: 0 0 0 20px; }
+    margin: 0 0 0 20px;
+    background-color: transparent;
+    color: #377E81;
+    font-size: 1.4em;
+    height: auto; }
+  .bbclasses .modalText {
+    padding: 20px; }
   .bbclasses .schedHighlight {
     background-color: #A89B9B;
     padding: 10px;
