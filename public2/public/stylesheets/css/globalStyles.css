@@ -183,7 +183,8 @@ nav {
     display: inline-block;
     width: 100%; }
   .bbclasses .classesRow {
-    display: flex; }
+    display: flex;
+    flex-wrap: wrap; }
   .bbclasses .card {
     width: 300px;
     margin: 40px 20px; }
