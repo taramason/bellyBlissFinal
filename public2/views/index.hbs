@@ -1,77 +1,68 @@
 <!-- Specials Pop-down -->
+{{#specials}}
+  <div class="specialPopDown bbslider" id="openSpecial">
+    <h1>{{this.currenttitle}}</h1>
+    <h2>{{this.currentspecial}}</h2>
+    <i class="material-icons right" id="closeSpecial">close</i>
+  </div>
+{{/specials}}
 
 <!-- Carousel -->
-
-      <div class="carousel carousel-slider center" data-indicators="true">
-        <div class="carousel-fixed-item center">
-        </div>
-        <div class="carousel-item carousel-item car-item-one white-text" href="#one!">
-          <h1>We are your village</h1>
-          <h2 class="white-text mission-one">Prenatal Yoga, Mommy & Me Yoga, Toddler Yoga, Childbirth Education, Doulas, Massage, Acupuncture, Chiropractic, Lactation Support and much more.</h2>
-        </div>
-        <div class="carousel-item car-item-two white-text" href="#two!">
-          <h2>Second Panel</h2>
-          <p class="white-text">This is your second panel</p>
-        </div>
-        <div class="carousel-item car-item-three white-text" href="#three!">
-          <h2>Third Panel</h2>
-          <p class="white-text">This is your third panel</p>
-        </div>
-        <div class="carousel-item car-item-four white-text" href="#four!">
-          <h2>Fourth Panel</h2>
-          <p class="white-text">This is your fourth panel</p>
-        </div>
-      </div>
+<div class="carousel carousel-slider center" data-indicators="true">
+  <div class="carousel-fixed-item center">
+  </div>
+  <div class="carousel-item carousel-item car-item-one white-text" href="#one!">
+    <h1>We are your village</h1>
+    <h2 class="white-text mission-one">Prenatal Yoga, Mommy & Me Yoga, Toddler Yoga, Childbirth Education, Doulas, Massage, Acupuncture, Chiropractic, Lactation Support and much more.</h2>
+  </div>
+  <div class="carousel-item car-item-two white-text" href="#two!">
+    <h2>Second Panel</h2>
+    <p class="white-text">This is your second panel</p>
+  </div>
+  <div class="carousel-item car-item-three white-text" href="#three!">
+    <h2>Third Panel</h2>
+    <p class="white-text">This is your third panel</p>
+  </div>
+  <div class="carousel-item car-item-four white-text" href="#four!">
+    <h2>Fourth Panel</h2>
+    <p class="white-text">This is your fourth panel</p>
+  </div>
+</div>
 
 <!-- Offerings -->
-      <div class="offeringCont">
-        <a href="massage.html" class="offering massage">
-          <div class="imgDiv">
-            <h2>MASSAGE</h2>
-            <img class="optImg" src="pics/wellness.jpg"/>
-          </div>
-        </a>
-        <a href="childbirthed.html" class="offering childbirthED">
-          <div class="imgDiv">
-            <h2>CHILDBIRTH ED</h2>
-            <img class="optImg" src="pics/foot.jpg"/>
-          </div>
-        </a>
-        <a href="shedule.html" class="offering schedule">
-          <div class="imgDiv">
-            <h2>SCHEDULE</h2>
-            <img class="optImg" src="pics/plank.jpg"/>
-          </div>
-        </a>
-        <a href="doula.html" class="offering doula">
-          <div class="imgDiv">
-            <h2>DOULA</h2>
-            <img class="optImg" src="pics/pregnant.jpg"/>
-          </div>
-        </a>
-      </div>
+<div class="offeringCont">
+  <a href="massage.html" class="offering massage">
+    <div class="imgDiv">
+      <h2>MASSAGE</h2>
+      <img class="optImg" src="pics/wellness.jpg"/>
+    </div>
+  </a>
+  <a href="childbirthed.html" class="offering childbirthED">
+    <div class="imgDiv">
+      <h2>CHILDBIRTH ED</h2>
+      <img class="optImg" src="pics/foot.jpg"/>
+    </div>
+  </a>
+  <a href="shedule.html" class="offering schedule">
+    <div class="imgDiv">
+      <h2>SCHEDULE</h2>
+      <img class="optImg" src="pics/plank.jpg"/>
+    </div>
+  </a>
+  <a href="doula.html" class="offering doula">
+    <div class="imgDiv">
+      <h2>DOULA</h2>
+      <img class="optImg" src="pics/pregnant.jpg"/>
+    </div>
+  </a>
+</div>
 
 <!-- Pretty spacer background -->
-      <div class="spacer">
-        <div class="bkgdOne">
-        </div>
-      </div>
-
-<!-- Specials -->
-<!-- {{# each sections }}
-      <div class="bbSection" id="specialsID">
-        <div class="sectionRight">
-          <h1>{{ this.heading }}</h1>
-          <h2>{{ this.subHeading }}</h2>
-          <p>{{ this.message }}</p>
-        </div>
-        <div class="sectionLeft"></div>
-      </div>
-      <div class="spacer">
-        <div class="bkgdOne"></div>
-      </div>
-      {{/each }} -->
-
+<div class="spacer">
+  <div class="bkgdOne">
+  </div>
+</div>
+<!-- Classes -->
 <div class="bbclasses">
   {{#kidsClassesTitle}}
     <div class="modalDiv">
@@ -93,24 +84,24 @@
   {{/kidsClassesTitle}}
   <div class="classesRow">
     {{# each kidsClasses }}
-    <div class="card">
-      <div class="card-image waves-block waves-light">
-        <img class="activator" src={{this.picture}}>
+      <div class="card small">
+        <div class="card-image waves-block waves-light">
+          <img class="activator" src={{this.picture}}>
+        </div>
+        <div class="card-content {{this.location-border}}">
+          <span class="card-title activator grey-text text-darken-4"><i class="material-icons right arrow">arrow_drop_down</i>{{this.title}}</span>
+          <p><a href="#">Schedule</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>{{ this.title }}</span>
+          <p>{{this.description}}</p>
+        </div>
       </div>
-      <div class="card-content {{this.location-border}}">
-        <span class="card-title activator grey-text text-darken-4"><i class="material-icons right arrow">arrow_drop_down</i>{{this.title}}</span>
-        <p><a href="#">Schedule</a></p>
-      </div>
-      <div class="card-reveal">
-        <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>{{ this.title }}</span>
-        <p>{{this.description}}</p>
-      </div>
-    </div>
     {{/ each }}
   </div>
 </div>
 
-<div class="bbclasses">
+<div class="bbclasses fitnessDiv">
   {{#fitnessClassesTitle}}
     <div class="modalDiv">
       <h1>{{this.heading}}</h1>
@@ -131,7 +122,7 @@
   {{/fitnessClassesTitle}}
   <div class="classesRow">
     {{# each fitnessClasses }}
-      <div class="card">
+      <div class="card small">
         <div class="card-image waves-effect waves-block waves-light">
           <img class="activator" src={{this.picture}}>
         </div>
@@ -169,11 +160,11 @@
   {{/workshopsSupportTitle}}
   <div class="classesRow">
     {{# each workshopsSupport }}
-      <div class="card">
+      <div class="card small">
         <div class="card-image waves-effect waves-block waves-light">
           <img class="activator" src={{this.picture}}>
         </div>
-        <div class="card-content  {{this.location-border}}">
+        <div class="card-content {{this.location-border}}">
           <span class="card-title activator grey-text text-darken-4"><i class="material-icons right arrow">arrow_drop_down</i>{{this.title}}</span>
           <p><a href="#">Schedule</a></p>
         </div>
@@ -185,20 +176,3 @@
     {{/ each }}
   </div>
 </div>
-      <!-- <div class="bbSection bbWorkshops" id="workshopsID">
-        <h1>Workshops</h1>
-        <h2>Sign Language<i class="material-icons">favorite</i>CPR<i class="material-icons">favorite</i>Childbirth<i class="material-icons">favorite</i>Newborn Care</h2>
-        <p>In addition to Childbirth Education, Belly Bliss offers a variety of workshops.</p>
-        <a class="waves-effect waves-light btn-large" href="pages/workshops.html">Learn More</a>
-      </div>
-      <div class="spacer">
-        <div class="bkgdOne">
-        </div>
-      </div>
-      <div class="bbSection bbBlissKids" id="blissKidsID">
-        <h1>Blissful Kids</h1>
-        <h2>Yoga<i class="material-icons">favorite</i>Art<i class="material-icons">favorite</i>Music</h2>
-        <p>In addition to Childbirth Education, Belly Bliss offers a variety of workshops.</p>
-        <a class="waves-effect waves-light btn-large" href="pages/blissfull-kids.html">Learn More</a>
-      </div>
-      <div class="bbSection"></div> -->

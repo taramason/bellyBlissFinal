@@ -13,6 +13,33 @@
 .backgroundTealTest {
   background-color: #377E81; }
 
+.line {
+  width: 80%;
+  border-top: 1px solid #A89B9B;
+  margin: auto;
+  padding: 1rem; }
+
+.displayNone {
+  display: none; }
+
+.closed {
+  display: none; }
+
+.bbslider {
+  overflow-y: hidden;
+  max-height: 350px;
+  /* approximate max height */
+  transition-property: all;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  height: auto !important; }
+
+.min {
+  max-height: 40px !important; }
+
+.open {
+  height: auto !important; }
+
 * {
   box-sizing: border-box; }
 
@@ -25,7 +52,7 @@ body {
   position: relative; }
 
 p {
-  font-size: 1.4em;
+  font-size: 1em;
   line-height: 1.4;
   margin: 1.4em auto; }
 
@@ -54,7 +81,7 @@ img {
   max-height: 100%; }
 
 .arrow {
-  font-size: 50px; }
+  font-size: 32px; }
 
 .rightAlignText {
   text-align: right; }
@@ -86,12 +113,29 @@ nav {
 .page-footer {
   background-color: #377E81; }
 
+.specialPopDown {
+  height: 0px;
+  position: fixed;
+  top: 64px;
+  z-index: 2;
+  background-color: #F0F0F0;
+  border: 3px dashed #E20073;
+  margin-left: 2rem; }
+  .specialPopDown h1 {
+    font-size: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem; }
+  .specialPopDown h2 {
+    padding-left: 2rem;
+    padding-right: 2rem; }
+
 .carousel.carousel-slider .car-item-one.carousel-item {
   background-image: url("../../pics/pregnant-one.jpg");
   position: static;
   overflow: hidden;
   opacity: 50%;
-  background-size: cover; }
+  background-size: cover;
+  height: 500px; }
   @media (min-width: 1200px) {
     .carousel.carousel-slider .car-item-one.carousel-item {
       min-height: 600px; } }
@@ -208,7 +252,7 @@ nav {
     display: flex;
     flex-wrap: wrap; }
   .bbclasses .card {
-    width: 300px;
+    width: 200px;
     margin: 40px 20px;
     display: flex;
     flex-direction: column; }
@@ -216,20 +260,29 @@ nav {
     height: 150px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; }
+    justify-content: space-between;
+    padding: 20px; }
+    .bbclasses .card-content .card-title {
+      line-height: 20px; }
+      .bbclasses .card-content .card-title i {
+        line-height: 20px; }
     .bbclasses .card-content span {
-      color: #696969 !important; }
+      color: #696969 !important;
+      font-size: 1rem; }
   .bbclasses h1 {
     margin: 0 0 30px 20px;
-    color: #377E81; }
-  .bbclasses a.modal-trigger {
-    margin: 0 0 0 20px;
-    background-color: transparent;
     color: #377E81;
-    font-size: 1.4em;
-    height: 50px;
-    line-height: 52px;
-    text-transform: none; }
+    font-size: 2.4rem;
+    margin-bottom: 20px; }
+  .bbclasses a.modal-trigger {
+    margin: 0 20px 0 20px;
+    background-color: white;
+    color: #377E81;
+    font-size: 1.2em;
+    height: 40px;
+    line-height: 40px;
+    text-transform: none;
+    border: 1px solid #52b4b8; }
   .bbclasses .schedHighlight {
     background-color: #A89B9B;
     padding: 10px;
@@ -241,6 +294,11 @@ nav {
       color: #696969; }
   .bbclasses .schedButton {
     float: right; }
+
+.fitnessDiv {
+  background-color: #356c6e; }
+  .fitnessDiv h1 {
+    color: white; }
 
 .secondaryPg h1 {
   padding: 0 40px; }

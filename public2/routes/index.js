@@ -131,6 +131,13 @@ router.get('/', function(req, res, next) {
         "picture": "pics/bf-support-group.jpg",
         "location-border": "stapleton"
       },
+    ],
+    specials: [
+      {
+        currenttitle: "December Special!",
+        currentspecial: "Buy one get one class free for the month of December!",
+        message: ""
+      }
     ]
   });
 });

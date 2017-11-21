@@ -5,9 +5,13 @@ $key-color: #696969;
 $pink: #E20073;
 $lt-pink: #e4c8c8;
 $orange: #F76306;
+$dark-teal: #356c6e;
 $teal: #377E81;
+$lt-teal: #52b4b8;
 $lt-grey: #A89B9B;
+$lt-lt-grey: #f8f7f7;
 $almost-white: #F0F0F0;
+$white: white;
 // $secondary-font:
 
 $mobile-breakpoint: 500px;
@@ -32,6 +36,43 @@ $normal-font: 1rem;
   background-color: $teal;
 }
 
+.line {
+  width:80%;
+  border-top: 1px solid $lt-grey;
+  margin: auto;
+  padding: 1rem;
+}
+
+.displayNone {
+  display: none;
+}
+
+.closed {
+  display:none;
+}
+
+.bbslider {
+	overflow-y: hidden;
+	max-height: 350px; /* approximate max height */
+	transition-property: all;
+	transition-duration: .5s;
+	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  height: auto !important;
+  // display:none;
+
+}
+
+.min {
+	max-height: 40px !important;
+  // max-width: 20px !important;
+  // padding: 0 !important;
+  // z-index: -1;
+}
+
+.open {
+  height: auto !important;
+}
+
 * {
   box-sizing: border-box;
   // color: dimgrey;
@@ -48,7 +89,7 @@ body {
 }
 
 p {
-  font-size: 1.4em;
+  font-size: 1em;
   line-height: 1.4;
   margin: 1.4em auto;
 } 
@@ -89,7 +130,7 @@ img {
 
 //size material icon arrow
 .arrow {
-  font-size: 50px;
+  font-size: 32px;
 }
 
 .rightAlignText {
@@ -142,6 +183,31 @@ nav {
   background-color: $teal;
 }
 
+.specialPopDown {
+  height: 0px;
+  position: fixed;
+  top: 64px;
+  z-index: 2;
+  background-color: $almost-white;
+  border: 3px dashed $pink;
+  margin-left: 2rem;
+  // padding: 0 5rem 1rem 5rem;
+
+  h1 {
+    font-size: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  h2 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  i {
+    // margin-bottom: 2rem;
+  }
+}
 .carousel.carousel-slider {
 
     .car-item-one.carousel-item {
@@ -151,6 +217,7 @@ nav {
       // background-color: grey;
       opacity: 50%;
       background-size: cover;
+      height: 500px;
 
       @media (min-width: $med-large-breakpoint) {
         min-height: 600px;
@@ -410,10 +477,10 @@ nav {
 .bbclasses {
   padding: 5rem;
 
-
   .modalDiv {
     display: inline-block;
     width: 100%;
+    // padding-bottom: 10px;
   }
 
   .classesRow {
@@ -422,7 +489,7 @@ nav {
   }
 
   .card {
-    width:300px;
+    width: 200px;
     margin: 40px 20px;
     display: flex;
     flex-direction: column;
@@ -433,25 +500,39 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 20px;
+
+    .card-title {
+      line-height: 20px;
+
+
+      i {
+        line-height: 20px;
+      }
+    }
 
     span {
       color: $key-color !important;
+      font-size: 1rem;
     }
   }
 
   h1 {
     margin: 0 0 30px 20px;
     color: $teal;
+    font-size: 2.4rem;
+    margin-bottom: 20px;
   }
 
   a.modal-trigger {
-    margin: 0 0 0 20px;
-    background-color: transparent;
+    margin: 0 20px 0 20px;
+    background-color: $white;
     color: $teal;
-    font-size: 1.4em;
-    height: 50px;
-    line-height: 52px;
+    font-size: 1.2em;
+    height: 40px;
+    line-height: 40px;
     text-transform: none;
+    border: 1px solid $lt-teal;
 
     span {
       // padding:
@@ -473,6 +554,14 @@ nav {
   }
   .schedButton {
     float:right;
+  }
+}
+
+.fitnessDiv {
+  background-color: $dark-teal;
+
+  h1 {
+  color: white;
   }
 }
 

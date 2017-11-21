@@ -10,9 +10,31 @@ $( document ).ready(function() {
 
     $('.carousel').carousel({ noWrap: true });
 
-      $(document).ready(function(){
-        $('.modal').modal();
-      });
+    $('.modal').modal();
+
+
+//Timeout for specials to drop down
+    setTimeout(function() {
+      $('.specialPopDown').addClass('open');
+    }, 2000); //20 seconds
+
+    $('#closeSpecial').click(function(){
+      $('#openSpecial').toggle('min');
+      // $('#openSpecial').removeClass('closed');
+    });
+
+//add text when not open?
+    // if $('.specialPopDown').hasClass('closed') {
+    //
+    // }
+
+
+
+
+
+// $('#Button').click(function(){
+//     $(this).addClass("active");
+// });
 
 // make statement to add border to bottom of classes diff color based on location
 //     if ($('.card .card-content').hasClass('cherryCreek')) {
